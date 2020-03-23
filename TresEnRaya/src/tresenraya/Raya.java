@@ -14,7 +14,7 @@ public class Raya {
     private char[][] tabla;
     private int turno;
 
-    private Raya() {
+    Raya() {
         turno = 1;
         tabla = new char[3][3];
         for (int i = 0; i < 3; i++) {
@@ -24,6 +24,27 @@ public class Raya {
         }
     }
 
+    public String marcaciones()
+    {
+    String aux="";
+        for (int i=0;i<3;i++)
+        {
+            for (int j=0;j<3;j++)
+            {
+                aux=aux+tabla[i][j];
+                if (j!=2)
+                {
+                    aux=aux+",";
+                }
+            }
+            if (i!=2)
+                {
+                    aux=aux+":";
+                }
+            
+        }
+    return "marcas:"+aux;    
+    }
     public void Reiniciar() {
         turno = 1;
         tabla = new char[3][3];
