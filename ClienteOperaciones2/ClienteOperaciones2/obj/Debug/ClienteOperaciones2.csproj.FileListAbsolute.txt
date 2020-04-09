@@ -1,0 +1,10 @@
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\bin\Debug\ClienteOperaciones2.exe.config
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\bin\Debug\ClienteOperaciones2.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\bin\Debug\ClienteOperaciones2.pdb
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.csprojAssemblyReference.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.Form1.resources
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.Properties.Resources.resources
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.csproj.GenerateResource.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.csproj.CoreCompileInputs.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperaciones2\ClienteOperaciones2\obj\Debug\ClienteOperaciones2.pdb
