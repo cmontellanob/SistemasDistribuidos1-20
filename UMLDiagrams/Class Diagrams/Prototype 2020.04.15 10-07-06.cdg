@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Prototype">
+  <ClassDiagramComponents>
+    <Class name="CuentaAHImpl" package="prototype" visibility="public" xPosition="51.0" yPosition="161.0">
+      <Fields>
+        <Field name="tipo" type="String" visibility="private"/>
+        <Field name="monto" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="clonar" returnType="ICuenta" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="setMonto" returnType="void" visibility="public">
+          <Argument type="double" name="monto"/>
+        </Method>
+        <Method name="getMonto" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Prototype" package="prototype" visibility="public" xPosition="337.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="ICuenta" package="prototype" visibility="public" xPosition="68.0" yPosition="20.0">
+      <Methods>
+        <Method name="clonar" returnType="ICuenta" visibility="package"/>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="prototype.ICuenta" target="prototype.ICuenta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="prototype.CuentaAHImpl" target="prototype.ICuenta"/>
+    <UseRelation source="prototype.CuentaAHImpl" target="prototype.ICuenta" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,6 @@
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperacionesConsola\ClienteOperacionesConsola\bin\Debug\ClienteOperacionesConsola.exe.config
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperacionesConsola\ClienteOperacionesConsola\bin\Debug\ClienteOperacionesConsola.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperacionesConsola\ClienteOperacionesConsola\bin\Debug\ClienteOperacionesConsola.pdb
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperacionesConsola\ClienteOperacionesConsola\obj\Debug\ClienteOperacionesConsola.csproj.CoreCompileInputs.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperacionesConsola\ClienteOperacionesConsola\obj\Debug\ClienteOperacionesConsola.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\ClienteOperacionesConsola\ClienteOperacionesConsola\obj\Debug\ClienteOperacionesConsola.pdb

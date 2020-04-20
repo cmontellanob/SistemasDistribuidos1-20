@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://desarrollo:14076/Operaciones2/servicio1?wsdl" uri="wsdl/desarrollo_14076/Operaciones2/servicio1.wsdl"/>
+    <system systemId="http://desarrollo:14076/Operaciones2/servicio1?xsd=1" uri="wsdl/desarrollo_14076/Operaciones2/servicio1.xsd_1.xsd"/>
+</catalog>

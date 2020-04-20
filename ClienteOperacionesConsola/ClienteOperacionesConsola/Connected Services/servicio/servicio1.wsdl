@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://soap/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="servicio1" targetNamespace="http://soap/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://desarrollo:14076/Operaciones2/servicio1?xsd=1" namespace="http://soap/" />
+    </xsd:schema>
+  </types>
+  <message name="sumar">
+    <part name="parameters" element="tns:sumar" />
+  </message>
+  <message name="sumarResponse">
+    <part name="parameters" element="tns:sumarResponse" />
+  </message>
+  <message name="restar">
+    <part name="parameters" element="tns:restar" />
+  </message>
+  <message name="restarResponse">
+    <part name="parameters" element="tns:restarResponse" />
+  </message>
+  <message name="multiplicar">
+    <part name="parameters" element="tns:multiplicar" />
+  </message>
+  <message name="multiplicarResponse">
+    <part name="parameters" element="tns:multiplicarResponse" />
+  </message>
+  <message name="dividir">
+    <part name="parameters" element="tns:dividir" />
+  </message>
+  <message name="dividirResponse">
+    <part name="parameters" element="tns:dividirResponse" />
+  </message>
+  <portType name="servicio1">
+    <operation name="sumar">
+      <input wsam:Action="http://soap/servicio1/sumarRequest" message="tns:sumar" />
+      <output wsam:Action="http://soap/servicio1/sumarResponse" message="tns:sumarResponse" />
+    </operation>
+    <operation name="restar">
+      <input wsam:Action="http://soap/servicio1/restarRequest" message="tns:restar" />
+      <output wsam:Action="http://soap/servicio1/restarResponse" message="tns:restarResponse" />
+    </operation>
+    <operation name="multiplicar">
+      <input wsam:Action="http://soap/servicio1/multiplicarRequest" message="tns:multiplicar" />
+      <output wsam:Action="http://soap/servicio1/multiplicarResponse" message="tns:multiplicarResponse" />
+    </operation>
+    <operation name="dividir">
+      <input wsam:Action="http://soap/servicio1/dividirRequest" message="tns:dividir" />
+      <output wsam:Action="http://soap/servicio1/dividirResponse" message="tns:dividirResponse" />
+    </operation>
+  </portType>
+  <binding name="servicio1PortBinding" type="tns:servicio1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="sumar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="restar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="multiplicar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="dividir">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="servicio1">
+    <port name="servicio1Port" binding="tns:servicio1PortBinding">
+      <soap:address location="http://desarrollo:14076/Operaciones2/servicio1" />
+    </port>
+  </service>
+</definitions>

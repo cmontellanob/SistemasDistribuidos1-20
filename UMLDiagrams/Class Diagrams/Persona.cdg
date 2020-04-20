@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Persona">
+  <ClassDiagramComponents>
+    <Interface name="IAnimal" package="" visibility="public" xPosition="187.0" yPosition="151.0">
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Interface>
+    <Class name="Perro" package="" visibility="public" xPosition="5.0" yPosition="262.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="untitledMethod" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Gato" package="" visibility="public" xPosition="96.0" yPosition="399.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Vaca" package="" visibility="public" xPosition="280.0" yPosition="272.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="IPlanta" package="" visibility="public" xPosition="669.0" yPosition="151.0">
+      <Methods/>
+    </Interface>
+    <Class name="Rosa" package="" visibility="public" xPosition="490.0" yPosition="281.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Margarita" package="" visibility="public" xPosition="803.0" yPosition="272.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Durazno" package="" visibility="public" xPosition="669.0" yPosition="415.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Perro" target="IAnimal"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Gato" target="IAnimal"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Rosa" target="IPlanta"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Durazno" target="IPlanta"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Margarita" target="IPlanta"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Vaca" target="IAnimal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

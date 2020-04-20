@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://soap/" targetNamespace="http://soap/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dividir" type="tns:dividir" />
+  <xs:element name="dividirResponse" type="tns:dividirResponse" />
+  <xs:element name="multiplicar" type="tns:multiplicar" />
+  <xs:element name="multiplicarResponse" type="tns:multiplicarResponse" />
+  <xs:element name="restar" type="tns:restar" />
+  <xs:element name="restarResponse" type="tns:restarResponse" />
+  <xs:element name="sumar" type="tns:sumar" />
+  <xs:element name="sumarResponse" type="tns:sumarResponse" />
+  <xs:complexType name="sumar">
+    <xs:sequence>
+      <xs:element name="a" type="xs:int" />
+      <xs:element name="b" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sumarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restar">
+    <xs:sequence>
+      <xs:element name="a" type="xs:int" />
+      <xs:element name="b" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="restarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="multiplicar">
+    <xs:sequence>
+      <xs:element name="a" type="xs:int" />
+      <xs:element name="b" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="multiplicarResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dividir">
+    <xs:sequence>
+      <xs:element name="a" type="xs:int" />
+      <xs:element name="b" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="dividirResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
