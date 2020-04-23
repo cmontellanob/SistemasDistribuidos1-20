@@ -22,7 +22,6 @@ public class ServidorReserva
     public static void main(String args[]) { 
 	try {
 	    ServidorReserva reserva=new ServidorReserva();
-//	    LocateRegistry.createRegistry(1099); // registrar el servidor e rmi register
 	    Naming.bind("ServidorReserva", reserva); 
             System.out.println("El servidor esta listo\n");
         }
@@ -84,6 +83,7 @@ public class ServidorReserva
             
             toServer.println(cadena);  //mandar alservidor 
             String result = fromServer.readLine();  // devolver del servidor
+            System.out.print("devuelto desde el servidor "+result);
             if (result.equals("SI"))
                 return true;
             else

@@ -29,22 +29,23 @@ public class ServidorCentral
 
     @Override
     public double cotizaciondolar(String fecha) throws RemoteException {
+        System.out.println("coditanzando para la fecha"+fecha);
         double aux=0;
         switch (fecha)
         {
-            case "26-06-192": 
+            case "26-06-19": 
                 aux=6.90;
                 break;
-            case "27-06-192": 
+            case "27-06-19": 
                 aux=6.91;
                 break;
-            case "28-06-192": 
+            case "28-06-19": 
                 aux=6.93;
                 break;
-            case "29-06-192": 
+            case "29-06-19": 
                 aux=6.92;
                 break;    
-            case "30-06-192": 
+            case "30-06-19": 
                 aux=6.96;
                 break;
             default:

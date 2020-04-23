@@ -5,6 +5,7 @@ import java.net.*;
 public class ServidorBancoCliente {
     private static boolean verificar(int idcliente,double monto)
     {
+        System.out.println("Verificando para:"+idcliente+"monto"+monto);
         boolean aux=false;
         switch(idcliente)
         {
@@ -18,6 +19,7 @@ public class ServidorBancoCliente {
                 aux=(monto<=1000);
                 break;
         }        
+        System.out.print(aux);
         return aux;
     }
     
@@ -34,9 +36,10 @@ public class ServidorBancoCliente {
                 fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
                 String cadena;
                 cadena = fromClient.readLine(); //cadena obtenida desde el lector idcliente,monto
+                System.out.println("cadena recibida:"+cadena);
                 String [] partes=cadena.split(","); 
                 int idcliente=Integer.parseInt(partes[0]);
-                double monto=Double.valueOf(partes[0]);
+                double monto=Double.valueOf(partes[1]);
                 String respuesta="";
                 if (verificar(idcliente,monto))
                     respuesta="SI";
@@ -49,7 +52,7 @@ public class ServidorBancoCliente {
                 //Thread.sleep(3000);
                  //for (int i=0;i<=10000000;i++);
                 toClient.flush(); // 
-                toClient.println("Hola"+cadena);
+                toClient.println(respuesta);
                 
             }
         }
