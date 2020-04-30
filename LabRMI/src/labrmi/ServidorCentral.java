@@ -3,6 +3,12 @@ package labrmi;
 import java.rmi.*;
 import java.rmi.registry.*;
 import java.rmi.server.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class ServidorCentral 
@@ -31,27 +37,26 @@ public class ServidorCentral
     public double cotizaciondolar(String fecha) throws RemoteException {
         System.out.println("coditanzando para la fecha"+fecha);
         double aux=0;
-        switch (fecha)
-        {
-            case "26-06-19": 
-                aux=6.90;
-                break;
-            case "27-06-19": 
-                aux=6.91;
-                break;
-            case "28-06-19": 
-                aux=6.93;
-                break;
-            case "29-06-19": 
-                aux=6.92;
-                break;    
-            case "30-06-19": 
-                aux=6.96;
-                break;
-            default:
-                aux=0;
+        PreparedStatement pst = null;
+        ResultSet rst = null;
+        String sql = "select * from cotizaciones where fecha='"+fecha+"'";
+        System.out.println(sql);
+
+        try {
+        ConexionPostgres posgres=new ConexionPostgres("BancoCentral");
+        Connection conexion =posgres.conectar(); 
+        pst = conexion.prepareStatement(sql);
+        rst = pst.executeQuery();
+        if (rst.next()){
+            String cotizacion = rst.getString("precio");
+            return Double.parseDouble(cotizacion);
+                        
         }
-        return aux;
+        } catch (SQLException ex) {
+            System.out.print("Error");
+        }
+        return 6.96;
+        
     }
 
 

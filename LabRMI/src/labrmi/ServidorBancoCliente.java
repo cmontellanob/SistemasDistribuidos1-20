@@ -1,26 +1,46 @@
 package labrmi;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.Block;
+import com.mongodb.DBCursor;
+import org.bson.Document;
+import com.mongodb.client.FindIterable;
+import com.mongodb.client.MongoDatabase;
 import java.io.*;
 import java.net.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class ServidorBancoCliente {
+       private static double montocliente;
+    
     private static boolean verificar(int idcliente,double monto)
     {
-        System.out.println("Verificando para:"+idcliente+"monto"+monto);
-        boolean aux=false;
-        switch(idcliente)
-        {
-            case 1:
-                aux=(monto<=300);
-                break;
-            case 2:
-                aux=(monto<=400);
-                break;
-            case 3:
-                aux=(monto<=1000);
-                break;
-        }        
-        System.out.print(aux);
-        return aux;
+       
+       System.out.println("Verificando para:"+idcliente+"monto"+monto);
+       
+       ConexionMongoDB mongo=new ConexionMongoDB("BancoClientes");
+       MongoDatabase m=mongo.conectar();
+       //new Document("idcliente", idcliente)
+       BasicDBObject criteria = new BasicDBObject();
+       criteria.append("idcliente", idcliente);
+       FindIterable<Document> iterable = m.getCollection("Clientes").find(criteria);
+       iterable.forEach(new Block<Document>() {
+            @Override
+            public void apply( Document document) {
+
+                List list = new ArrayList(document.values());
+                montocliente=Double.parseDouble(list.get(3).toString());
+                
+                System.out.print(montocliente);
+                
+            }
+        });
+       if (monto<=montocliente)
+           return true;
+       else
+           return false;
     }
     
     public static void main(String[] args) throws InterruptedException{

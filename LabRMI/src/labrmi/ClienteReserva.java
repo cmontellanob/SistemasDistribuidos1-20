@@ -35,13 +35,13 @@ public class ClienteReserva {
              switch (op)
              {
                  case 1:
-                     double cotizacion=reserva.Cotizar("26-06-19", "26-06-19", "26-06-19");
+                     double cotizacion=reserva.Cotizar("2019-06-26", "2019-06-26", "2019-06-26");
                      System.out.println(cotizacion);
                      break;
                  case 2:
                      System.out.print("introduzca el id del cliente");
                      int idcliente=sc.nextInt();
-                     if ( reserva.reservar("26-06-19", "26-06-19",idcliente, "26-06-19"))
+                     if ( reserva.reservar("2019-06-26", "2019-06-26",idcliente, "2019-06-26"))
                          System.out.print("se logro hacer la reserva");
                      else
                          System.out.print("ERROR no se logro hacer la reserva");
