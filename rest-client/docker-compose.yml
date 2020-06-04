@@ -1,0 +1,12 @@
+version: '2'
+services:
+  rest-client:
+    image: 'richyyjd/rest-client'
+    container_name: rest-client
+    ports:
+      - '8777:8899'
+    volumes:
+      - 'client_data:/root/client_data'
+volumes:
+  client_data:
+    driver: local
