@@ -1,0 +1,10 @@
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\bin\Debug\ClienteVotacion.exe.config
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\bin\Debug\ClienteVotacion.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\bin\Debug\ClienteVotacion.pdb
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.csprojAssemblyReference.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.Form1.resources
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.Properties.Resources.resources
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.csproj.GenerateResource.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.csproj.CoreCompileInputs.cache
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.exe
+D:\usfx\SIS-258 Sistemas Distribuidos\1-2020\SistemasDistribuidos1-20\2doParcial\ClienteVotacion\ClienteVotacion\obj\Debug\ClienteVotacion.pdb

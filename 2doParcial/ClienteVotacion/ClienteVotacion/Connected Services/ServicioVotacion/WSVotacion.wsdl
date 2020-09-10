@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://votacion/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSVotacion" targetNamespace="http://votacion/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:43941/WAVotos/WSVotacion?xsd=1" namespace="http://votacion/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerVotacion">
+    <part name="parameters" element="tns:obtenerVotacion" />
+  </message>
+  <message name="obtenerVotacionResponse">
+    <part name="parameters" element="tns:obtenerVotacionResponse" />
+  </message>
+  <portType name="WSVotacion">
+    <operation name="obtenerVotacion">
+      <input wsam:Action="http://votacion/WSVotacion/obtenerVotacionRequest" message="tns:obtenerVotacion" />
+      <output wsam:Action="http://votacion/WSVotacion/obtenerVotacionResponse" message="tns:obtenerVotacionResponse" />
+    </operation>
+  </portType>
+  <binding name="WSVotacionPortBinding" type="tns:WSVotacion">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerVotacion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSVotacion">
+    <port name="WSVotacionPort" binding="tns:WSVotacionPortBinding">
+      <soap:address location="http://localhost:43941/WAVotos/WSVotacion" />
+    </port>
+  </service>
+</definitions>
