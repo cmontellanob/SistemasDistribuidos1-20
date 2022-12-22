@@ -15,7 +15,7 @@
         "bcryptjs": "^2.4.3",
         "body-parser": "^1.18.2",
         "express": "^4.16.3",
-        "jsonwebtoken": "^8.2.1",
+        "jsonwebtoken": "^9.0.0",
         "mongoose": "^5.0.1",
         "node-odata": "^0.7.16",
         "winston": "^2.4.2",
